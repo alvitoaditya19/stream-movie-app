@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* fixed z-50 w-[300px] bg-streamDark  hidden lg:block */
+
+.sidebar {
+  width: 400px;
+  background-color: #100929;
+  transition: all 0.5s ease;
+  z-index: 50;  
+}
+
+.sidebar.active {
+  margin-left: -400px;
+}
+
+.content {
+  width: 100%;
+  background: #110B29;
+  min-height: 100vh;
+  transition: all 0.5s ease;
+  border-radius: 50px 0 0 50px;
+}
