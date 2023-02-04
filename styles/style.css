@@ -3,7 +3,32 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-/* fixed z-50 w-[300px] bg-streamDark  hidden lg:block */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #100929;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FB2576; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FB2576; 
+}
+
+/* Background */
+.bg-linear{
+  background: linear-gradient(116.06deg, #221358 13.17%, #100929 100.94%);
+}
 
 .sidebar {
   width: 400px;
@@ -22,4 +47,9 @@
   min-height: 100vh;
   transition: all 0.5s ease;
   border-radius: 50px 0 0 50px;
+}
+
+.navbar-nav .nav-link{
+  
+  color: #100929 !important;
 }

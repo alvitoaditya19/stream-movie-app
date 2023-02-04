@@ -9,12 +9,12 @@
 
   .side-link.active,
   .side-link:hover {
-    @apply bg-primary font-semibold text-white;
+    @apply bg-primary1 font-semibold text-white;
   }
 
   .side-link .active,
   .side-link:hover .total {
-    @apply bg-white font-semibold text-primary;
+    @apply bg-white font-semibold text-primary1;
   }
 }
 

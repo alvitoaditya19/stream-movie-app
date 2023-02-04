@@ -9,7 +9,7 @@ export default function Sidebar({ toggleViewMode, toggleNavbar }: SidebarProps) 
         <>
             {/* <!-- START: Sidebar --> */}
             <div className={toggleViewMode ? "sidebar active hidden lg:block" : "sidebar hidden lg:block"}>
-                <div className="flex flex-col p-12 border-r border-softpur overflow-y-auto h-screen">
+                <div className="flex flex-col p-10 border-r border-softpur overflow-y-auto h-screen">
                     <a href="/">
                         <img src="/images/ic-logo.svg" alt="" />
                     </a>

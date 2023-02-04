@@ -24,7 +24,10 @@ module.exports = {
       streamDark: "#100929",
       streamGray: "#8C87A2",
       softpur: "#3D3762",
-      primary: "#FB2576",
+      primary1: "#FB2576",
+      primary2: "#FF4C90",
+
+      grey1: "#8B8FC4",
 
       current: colors.current,
       transparent: colors.transparent,

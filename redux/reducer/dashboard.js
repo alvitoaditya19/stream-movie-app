@@ -1,21 +1,12 @@
 const initDashboard = {
-  suhuCelcius: [],
-  user:[],
-  // popular:[],
-  // recommended:[],
+  movies:[],
 }
 
 export const dashboardReducer = (state = initDashboard, action) => {
-  if(action.type === 'SET_TEMPERATURE_CELCIUS'){
+  if(action.type === 'SET_MOVIES'){
     return{
       ...state,
-      suhuCelcius: action.value
-    }
-  }
-  if(action.type === 'SET_USER'){
-    return{
-      ...state,
-      user: action.value
+      movies: action.value
     }
   }
   return state;
