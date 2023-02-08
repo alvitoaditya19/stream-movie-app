@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import FeaturedCard from '../../components/molecules/Featured'
 import { useDispatch, useSelector } from 'react-redux';
 
