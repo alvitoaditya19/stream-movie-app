@@ -1,5 +1,7 @@
 const initDashboard = {
   movies:[],
+  genres:[],
+
 }
 
 export const dashboardReducer = (state = initDashboard, action) => {
@@ -7,6 +9,12 @@ export const dashboardReducer = (state = initDashboard, action) => {
     return{
       ...state,
       movies: action.value
+    }
+  }
+  if(action.type === 'SET_GENRES_MOVIES'){
+    return{
+      ...state,
+      genres: action.value
     }
   }
   return state;

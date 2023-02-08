@@ -12,6 +12,10 @@
     @apply bg-primary1 font-semibold text-white;
   }
 
+
+  .side-link .total {
+    @apply bg-primary1 font-semibold text-white;
+  }
   .side-link .active,
   .side-link:hover .total {
     @apply bg-white font-semibold text-primary1;
