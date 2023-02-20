@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { MoviesTypes } from '../../../services/data-types/movies'
 
 export default function FilmCard(props: Partial<MoviesTypes>) {
@@ -6,7 +7,7 @@ export default function FilmCard(props: Partial<MoviesTypes>) {
 
     const linkPoster = `${imageBaseURL}/w500/${backdrop_path ?? poster_path}`
     return (
-        <div className="w-1/2 md:w-1/5 lg:px-3 px-1 lg:mb-0 mb-4">
+        <div className="w-1/2 md:w-1/5 lg:px-3 px-1 lg:mb-6 mb-4">
 
             <div className="relative group overflow-hidden">
                 <img src={linkPoster}
@@ -16,7 +17,9 @@ export default function FilmCard(props: Partial<MoviesTypes>) {
                     className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black rounded-bl-[28px] rounded-br-[28px] z-10 translate-y-0 group-hover:translate-y-[300px] transition ease-in-out duration-500 group-hover:bg-transparent overflow-hidden">
                     <div className="px-7 pb-7">
                         <div className="font-medium text-xl text-white">{title}</div>
+                        <p className="mb-0 text-streamGray text-base mt-[10px]">{genres}</p>
                         <p className="mb-0 text-streamGray text-base mt-[10px]">{release_date}</p>
+
                     </div>
                 </div>
                 

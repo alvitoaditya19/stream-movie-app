@@ -1,7 +1,4 @@
-export interface GenresId{
-    id:string,
-    name:string
-}
+
 
 export interface MoviesTypes {
     id: string;
@@ -11,5 +8,6 @@ export interface MoviesTypes {
     backdrop_path: string,
     poster_path: string,
     release_date: String,
-    genres: GenresId
+    genres: string
+    genre_ids:string[]
 }
